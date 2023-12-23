@@ -32,6 +32,7 @@ export default defineConfig({
         {
           // add any other imports you were relying on
           'vue-router/auto': ['useLink'],
+          '@vueuse/head': ['createHead'],
         },
       ],
       dts: 'src/auto-imports.d.ts',

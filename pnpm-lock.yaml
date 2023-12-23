@@ -23,6 +23,9 @@ dependencies:
   pinia-plugin-persistedstate:
     specifier: ^3.2.1
     version: 3.2.1(pinia@2.1.7)
+  unhead:
+    specifier: ^1.8.9
+    version: 1.8.9
   vue:
     specifier: ^3.3.13
     version: 3.3.13(typescript@5.3.3)
