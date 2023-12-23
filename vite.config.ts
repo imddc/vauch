@@ -6,6 +6,7 @@ import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import VueRouter from 'unplugin-vue-router/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import UnoCSS from 'unocss/vite'
 import VueDevTools from 'vite-plugin-vue-devtools'
@@ -42,6 +43,12 @@ export default defineConfig({
       dts: 'src/auto-imports.d.ts',
       dirs: ['src/composables', 'src/stores'],
       vueTemplate: true,
+    }),
+    Components({
+      // extensions: ['vue'],
+      // dirs: ['src/components'],
+      globs: ['src/components/*.{vue}'],
+      dts: 'src/components.d.ts',
     }),
 
     UnoCSS(),
