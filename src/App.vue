@@ -2,7 +2,7 @@
   <div>
     <div>
       <button @click="countStore.decrement()">-</button>
-      <span style="padding: 0 16px">
+      <span px-16>
         {{ countStore.counter }}
       </span>
       <button @click="countStore.increment()">+</button>
