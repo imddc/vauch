@@ -20,6 +20,10 @@
 import { useCountStore } from '~/store'
 
 const countStore = useCountStore()
+
+useHead({
+  title: 'Vue 3 + Vite + TypeScript  + Pinia + Vue Router',
+})
 </script>
 
 <style scoped>
