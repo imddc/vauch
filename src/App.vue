@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-import { useCountStore } from './store'
+import { useCountStore } from '~/store'
 
 const countStore = useCountStore()
 </script>
