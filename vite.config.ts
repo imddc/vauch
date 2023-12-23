@@ -3,6 +3,7 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'node:path'
 import vue from '@vitejs/plugin-vue'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 import VueRouter from 'unplugin-vue-router/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
@@ -20,6 +21,7 @@ export default defineConfig({
   plugins: [
     VueDevTools(),
     vue(),
+    vueJsx(),
     VueRouter({
       extensions: ['.vue', '.md'],
       dts: 'src/typed-router.d.ts',
