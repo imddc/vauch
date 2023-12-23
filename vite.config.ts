@@ -17,6 +17,7 @@ export default defineConfig({
     AutoImport({
       imports: [
         'vue',
+        'pinia',
         VueRouterAutoImports,
         {
           // add any other imports you were relying on

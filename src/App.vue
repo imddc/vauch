@@ -1,11 +1,12 @@
 <template>
   <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <div>
+      <button @click="countStore.decrement()">-</button>
+      <span style="padding: 0 16px">
+        {{ countStore.counter }}
+      </span>
+      <button @click="countStore.increment()">+</button>
+    </div>
 
     <main>
       <router-view v-slot="{ Component }">
@@ -15,7 +16,11 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useCountStore } from './store'
+
+const countStore = useCountStore()
+</script>
 
 <style scoped>
 .logo {
