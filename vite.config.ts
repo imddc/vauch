@@ -6,28 +6,28 @@ import { VueRouterAutoImports } from 'unplugin-vue-router'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    vue(),
-    VueRouter({
-      extensions: ['.vue', '.md'],
-      dts: 'src/typed-router.d.ts',
-    }),
-    AutoImport({
-      imports: [
-        'vue',
-        VueRouterAutoImports,
-        {
-          // add any other imports you were relying on
-          'vue-router/auto': ['useLink'],
-        },
-      ],
-      dts: 'src/auto-imports.d.ts',
-      dirs: ['src/composables', 'src/stores'],
-      vueTemplate: true,
-    }),
-  ],
+	plugins: [
+		vue(),
+		VueRouter({
+			extensions: ['.vue', '.md'],
+			dts: 'src/typed-router.d.ts',
+		}),
+		AutoImport({
+			imports: [
+				'vue',
+				VueRouterAutoImports,
+				{
+					// add any other imports you were relying on
+					'vue-router/auto': ['useLink'],
+				},
+			],
+			dts: 'src/auto-imports.d.ts',
+			dirs: ['src/composables', 'src/stores'],
+			vueTemplate: true,
+		}),
+	],
 
-  server: {
-    port: 9527,
-  },
+	server: {
+		port: 9527,
+	},
 })
