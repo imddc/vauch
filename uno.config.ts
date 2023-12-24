@@ -19,6 +19,9 @@ export default defineConfig({
       'icon-btn',
       'inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600',
     ],
+    ['flex-center', 'flex items-center justify-center'],
+    ['flex-col-center', 'flex flex-col items-center justify-center'],
+    ['flex-between', 'flex items-center justify-between'],
   ],
   presets: [
     presetUno(),

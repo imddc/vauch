@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div mx-auto max-w-1440 p16 flex-col-center pt-200>
     <div>
       <button @click="countStore.decrement()">-</button>
       <span px-16>
@@ -8,11 +8,13 @@
       <button @click="countStore.increment()">+</button>
     </div>
 
-    <main>
+    <main py-24>
       <router-view v-slot="{ Component }">
         <component :is="Component" />
       </router-view>
     </main>
+
+    <Footer />
   </div>
 </template>
 
