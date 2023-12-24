@@ -45,9 +45,8 @@ export default defineConfig({
       vueTemplate: true,
     }),
     Components({
-      // extensions: ['vue'],
-      // dirs: ['src/components'],
-      globs: ['src/components/*.{vue}'],
+      extensions: ['vue'],
+      dirs: ['src/components'],
       dts: 'src/components.d.ts',
     }),
 

@@ -1,26 +1,20 @@
 <template>
-  <div>
+  <div mx-auto max-w-1440 p16 flex-col-center pt-200>
     <div>
-      <button @click="countStore.decrement()">-</button>
-      <span px-16>
-        {{ countStore.counter }}
-      </span>
-      <button @click="countStore.increment()">+</button>
+      <img class="logo" src="/vite.svg" alt="Vue logo" width="200" height="200" />
     </div>
 
-    <main>
+    <main py-24>
       <router-view v-slot="{ Component }">
         <component :is="Component" />
       </router-view>
     </main>
+
+    <Footer />
   </div>
 </template>
 
-<script setup lang="ts">
-import { useCountStore } from '~/store'
-
-const countStore = useCountStore()
-</script>
+<script setup lang="ts"></script>
 
 <style scoped>
 .logo {
@@ -36,3 +30,4 @@ const countStore = useCountStore()
   filter: drop-shadow(0 0 2em #42b883aa);
 }
 </style>
+~/stores
