@@ -1,8 +1,17 @@
 <template>
-  <div mx-auto max-w-1440 p16 flex-col-center pt-200>
-    <div>
-      <img class="logo" src="/vite.svg" alt="Vue logo" width="200" height="200" />
-    </div>
+  <div mx-auto h-full max-w-1440 p16 flex-col-center pt-200>
+    <section py-12>
+      <button btn @click="countStore.decrement()">-</button>
+      <span text-center px-16 min-w-50>
+        {{ countStore.counter }}
+      </span>
+      <button btn @click="countStore.increment()">+</button>
+    </section>
+
+    <section flex gap-26 mt-28 py-12>
+      <router-link to="/"> Home </router-link>
+      <router-link to="/about"> About </router-link>
+    </section>
 
     <main py-24>
       <router-view v-slot="{ Component }">
@@ -14,20 +23,8 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const countStore = useCountStore()
+</script>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
-~/stores
+<style scoped lang="scss"></style>

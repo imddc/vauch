@@ -1,19 +1,11 @@
 <template>
-  <div>
-    <button btn @click="countStore.decrement()">-</button>
-    <span px-16>
-      {{ countStore.counter }}
-    </span>
-    <button btn @click="countStore.increment()">+</button>
-  </div>
+  <div>This is Home page</div>
 </template>
 
 <script setup lang="ts">
 useHead({
-  title: 'Vue 3 + Vite + TypeScript  + Pinia + Vue Router',
+  title: 'Home',
 })
-
-const countStore = useCountStore()
 </script>
 
 <style scoped lang="scss"></style>
