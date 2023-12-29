@@ -1,7 +1,4 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 400;
-}
+@import url('./animation.scss');
 
 html,
 body,
@@ -34,4 +31,13 @@ html.dark {
     background-color: #fff;
     color-scheme: light;
   }
+}
+
+::view-transition-old(*) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+::view-transition-new(*) {
+  animation: effects 0.5s ease-in-out;
+  mix-blend-mode: normal;
 }

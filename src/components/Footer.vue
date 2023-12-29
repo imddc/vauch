@@ -1,6 +1,6 @@
 <template>
-  <div flex>
-    <button icon-btn flex-center text-24 @click="toggleDark()">
+  <div flex gap-16>
+    <button icon-btn flex-center text-24 @click="toggleDark">
       <div class="i-carbon-sun dark:i-carbon-moon" />
     </button>
   </div>
