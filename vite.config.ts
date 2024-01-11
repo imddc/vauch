@@ -1,7 +1,7 @@
 /// <reference types="vitest" />
 
-import { defineConfig } from 'vite'
 import { resolve } from 'node:path'
+import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import VueRouter from 'unplugin-vue-router/vite'
@@ -53,7 +53,7 @@ export default defineConfig({
     UnoCSS(),
   ],
 
-  //https://vitest.dev/guide/
+  // https://vitest.dev/guide/
   test: {
     include: ['test/**/*.test.ts'],
     environment: 'jsdom',

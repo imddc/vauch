@@ -1,3 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
   <div flex gap-16>
     <button icon-btn flex-center text-24 @click="toggleDark">
@@ -5,7 +7,5 @@
     </button>
   </div>
 </template>
-
-<script setup lang="ts"></script>
 
 <style scoped></style>

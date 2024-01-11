@@ -1,10 +1,10 @@
-import { App } from 'vue'
+import type { App } from 'vue'
 
 const router = createRouter({
   history: createWebHistory(),
 })
 
-const setupRouter = (app: App) => {
+function setupRouter(app: App) {
   app.use(router)
 }
 
