@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const countStore = useCountStore();
+const countStore = useCountStore()
 </script>
 
 <template>

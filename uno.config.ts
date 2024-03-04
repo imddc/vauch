@@ -6,38 +6,38 @@ import {
   presetUno,
   presetWebFonts,
   transformerDirectives,
-  transformerVariantGroup,
-} from "unocss";
+  transformerVariantGroup
+} from 'unocss'
 
 export default defineConfig({
   shortcuts: [
-    ["flex-center", "flex items-center justify-center"],
-    ["flex-col-center", "flex flex-col items-center justify-center"],
-    ["flex-between", "flex items-center justify-between"],
+    ['flex-center', 'flex items-center justify-center'],
+    ['flex-col-center', 'flex flex-col items-center justify-center'],
+    ['flex-between', 'flex items-center justify-between'],
     [
-      "btn",
-      "px-8 py-2 rounded-4 inline-block bg-teal-700 text-white cursor-pointer !outline-none hover:bg-teal-800 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50",
+      'btn',
+      'px-8 py-2 rounded-4 inline-block bg-teal-700 text-white cursor-pointer !outline-none hover:bg-teal-800 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'
     ],
     [
-      "icon-btn",
-      "inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600",
-    ],
+      'icon-btn',
+      'inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600'
+    ]
   ],
   presets: [
     presetUno(),
     presetAttributify(),
     presetIcons({
-      scale: 1.2,
+      scale: 1.2
     }),
     presetTypography(),
     presetWebFonts({
       fonts: {
-        sans: "DM Sans",
-        serif: "DM Serif Display",
-        mono: "DM Mono",
-      },
-    }),
+        sans: 'DM Sans',
+        serif: 'DM Serif Display',
+        mono: 'DM Mono'
+      }
+    })
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],
-  safelist: "prose m-auto text-left".split(" "),
-});
+  safelist: 'prose m-auto text-left'.split(' ')
+})
