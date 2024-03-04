@@ -1,23 +1,23 @@
 interface State {
-  counter: number
+  counter: number;
 }
 
-export const useCountStore = defineStore('count', {
+export const useCountStore = defineStore("count", {
   state: (): State => ({
     counter: 0,
   }),
   actions: {
     increment() {
-      this.counter++
+      this.counter++;
     },
     decrement() {
-      this.counter--
+      this.counter--;
     },
   },
   persist: [
     {
-      key: 'count',
+      key: "count",
       storage: localStorage,
     },
   ],
-})
+});

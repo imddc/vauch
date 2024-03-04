@@ -1,7 +1,7 @@
-import type { App } from 'vue'
+import type { App } from "vue";
 
-const head = createHead()
+const head = createHead();
 
 export function setupHead(app: App) {
-  app.use(head)
+  app.use(head);
 }

@@ -15,11 +15,11 @@
 
 ## Pre-packed
 
- - unocss
- - vue-router
- - pinia
- - vueuse
- - vitest
+- unocss
+- vue-router
+- pinia
+- vueuse
+- vitest
 
 ## Usage
 
@@ -27,14 +27,15 @@
 
 run and visit localhost:9527
 
-``` bash
+```bash
  pnpm install
  pnpm dev
 ```
 
 ### build
 
-``` bash
+```bash
  pnpm build
 ```
+
 And you will see the generated file in `dist` that ready to be served.
