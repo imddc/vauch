@@ -1,7 +1,7 @@
 import App from './App.vue'
-import { setupHead } from './modules/head'
-import { setupStore } from './modules/pinia'
-import { setupRouter } from './modules/router'
+import { setupHead } from './plugins/head'
+import { setupStore } from './plugins/pinia'
+import { setupRouter } from './plugins/router'
 
 import '@unocss/reset/tailwind.css'
 import './styles/main.css'
