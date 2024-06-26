@@ -1,3 +1,4 @@
+import { ref } from 'vue'
 /**
  * @description viewTransition
  */
@@ -7,14 +8,14 @@ export function useViewTransition(fn: (...args: any[]) => void) {
   let viewTransitionFinish: undefined | (() => void)
   let viewTransitionAbort: undefined | (() => void)
 
-  const supportViewTransition =
-    document !== undefined && 'startViewTransition' in document
+  const supportViewTransition
+    = document !== undefined && 'startViewTransition' in document
 
   // 不支持则啥也不做
   if (!supportViewTransition) {
     isViewTransition.value = false
     console.warn(
-      'View transition is not supported in your browser, fallback to normal transition.'
+      'View transition is not supported in your browser, fallback to normal transition.',
     )
     return
   }
@@ -31,7 +32,8 @@ export function useViewTransition(fn: (...args: any[]) => void) {
     try {
       fn()
       viewTransitionFinish?.()
-    } catch (e) {
+    }
+    catch (e) {
       viewTransitionAbort?.()
     }
     return promise

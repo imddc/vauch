@@ -1,10 +1,12 @@
+import { defineStore } from 'pinia'
+
 interface State {
   counter: number
 }
 
 export const useCountStore = defineStore('count', {
   state: (): State => ({
-    counter: 0
+    counter: 0,
   }),
   actions: {
     increment() {
@@ -12,12 +14,12 @@ export const useCountStore = defineStore('count', {
     },
     decrement() {
       this.counter--
-    }
+    },
   },
   persist: [
     {
       key: 'count',
-      storage: localStorage
-    }
-  ]
+      storage: localStorage,
+    },
+  ],
 })

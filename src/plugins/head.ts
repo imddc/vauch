@@ -1,7 +1,10 @@
+import { createHead } from '@vueuse/head'
 import type { App } from 'vue'
 
 const head = createHead()
 
-export function setupHead(app: App) {
+function setupHead(app: App) {
   app.use(head)
 }
+
+export { setupHead }

@@ -1,3 +1,6 @@
+import { useDark, useToggle } from '@vueuse/core'
+import { useViewTransition } from './useViewTransition'
+
 export const isDark = useDark()
 export function toggleDark(e: MouseEvent) {
   const toggle = useToggle(isDark)
