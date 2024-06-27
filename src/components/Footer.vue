@@ -3,13 +3,11 @@ import { toggleDark } from '~/composables/index'
 </script>
 
 <template>
-  <div class="flex gap-4">
-    <button
-      type="button"
-      class="flex-center text-6"
-      @click="toggleDark"
-    >
-      <span class="icon-[carbon--moon] dark:icon-[carbon--sun]" />
-    </button>
-  </div>
+  <button
+    type="button"
+    class="flex-center"
+    @click="toggleDark"
+  >
+    <div class="icon-[ph--sun] dark:icon-[ph--moon] !size-6" />
+  </button>
 </template>
