@@ -309,7 +309,12 @@ export default antfu(
       'no-html-link-for-pages': 'off',
       'no-constant-condition': ['error', { checkLoops: false }],
       'no-console': 'off',
-
+      'sort-imports': ['error', {
+        ignoreCase: false,
+        ignoreDeclarationSort: true,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: ['none', 'all', 'single', 'multiple'],
+      }],
     },
   },
 )

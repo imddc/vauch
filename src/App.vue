@@ -1,16 +1,13 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
-import Footer from '~/components/Footer.vue'
+import Footer from './components/Footer.vue'
 import { useCountStore } from '~/stores/countStore'
 
 const countStore = useCountStore()
 </script>
 
 <template>
-  <div
-    id="ref"
-    class="mx-auto h-full max-w-1440 p16 flex-col-center pt-200"
-  >
+  <div class="mx-auto h-full max-w-1440 p16 flex-col-center pt-200">
     <section class="py-3">
       <button
         type="button"
