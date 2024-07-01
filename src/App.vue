@@ -19,7 +19,7 @@ const countStore = useCountStore()
       <div class="text-6xl font-bold">
         <span class="relative">
           V
-          <sub class="absolute -top-1/3 left-2/3 icon-[emojione--smiling-cat-face-with-open-mouth] !size-8 rotate-12" />
+          <sub class="absolute -top-1/3 left-2/3 icon-[lucide--cat] !size-8 rotate-12" />
         </span>
         auch
       </div>
@@ -29,7 +29,7 @@ const countStore = useCountStore()
           type="button"
           @click="countStore.decrement()"
         >
-          <i class="icon-[fluent--subtract-20-filled] size-4" />
+          <i class="icon-[lucide--minus] size-4" />
         </button>
         <div class="text-6 font-bold bg-[#f0f0f0]/20 p-1 px-2 rounded">
           {{ countStore.counter }}
@@ -38,7 +38,7 @@ const countStore = useCountStore()
           type="button"
           @click="countStore.increment()"
         >
-          <i class="icon-[material-symbols--add] size-4" />
+          <i class="icon-[lucide--plus] size-4" />
         </button>
       </section>
 

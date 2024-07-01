@@ -8,6 +8,6 @@ import { toggleDark } from '~/composables/index'
     class="flex-center"
     @click="toggleDark"
   >
-    <div class="icon-[ph--sun] dark:icon-[ph--moon] !size-6" />
+    <div class="icon-[lucide--sun] dark:icon-[lucide--moon] !size-6" />
   </button>
 </template>
