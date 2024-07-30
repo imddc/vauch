@@ -7,7 +7,9 @@ const countStore = useCountStore()
 </script>
 
 <template>
-  <div class="size-full bg-gray-50 text-gray-950 relative dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 z-0">
+  <div
+    class="size-full bg-gray-50 text-gray-950 relative dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 z-0"
+  >
     <div
       class="bg-[#fbe2e3] absolute -z-10 top-[-6rem] right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#5b3b3c]"
     />
@@ -19,7 +21,9 @@ const countStore = useCountStore()
       <div class="text-6xl font-bold">
         <span class="relative">
           V
-          <sub class="absolute -top-1/3 left-2/3 icon-[lucide--cat] !size-8 rotate-12" />
+          <sub
+            class="absolute -top-1/3 left-2/3 icon-[lucide--cat] !size-8 rotate-12"
+          />
         </span>
         auch
       </div>
