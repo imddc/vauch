@@ -18,7 +18,6 @@ export default defineConfig({
   plugins: [
     VueRouter({
       logs: true,
-      dts: 'src/typed-router.d.ts',
       routesFolder: [
         {
           src: 'src/pages',
@@ -32,7 +31,7 @@ export default defineConfig({
 
   // https://vitest.dev/guide/
   test: {
-    include: ['test/**/*.test.ts'],
+    include: ['test/**/*.test.js'],
     environment: 'jsdom',
   },
 

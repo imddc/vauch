@@ -48,9 +48,6 @@ importers:
       '@iconify/tailwind':
         specifier: ^1.1.1
         version: 1.1.1
-      '@types/node':
-        specifier: ^20.14.9
-        version: 20.14.9
       '@vitejs/plugin-vue':
         specifier: ^4.6.2
         version: 4.6.2(vite@5.3.1(@types/node@20.14.9)(sass@1.77.6))(vue@3.4.30(typescript@5.5.2))

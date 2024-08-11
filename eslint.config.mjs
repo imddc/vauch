@@ -200,8 +200,7 @@ export default antfu(
         },
       ],
       'vue/this-in-template': ['error', 'never'],
-
-      'vue/block-lang': ['error', { script: { lang: 'ts' } }],
+      'vue/block-lang': ['error', { script: { lang: ['js', 'ts'] } }],
       'vue/block-order': ['error', { order: ['script', 'template', 'style'] }],
       'vue/block-tag-newline': [
         'error',

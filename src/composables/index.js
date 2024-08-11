@@ -2,7 +2,7 @@ import { useDark, useToggle } from '@vueuse/core'
 import { useViewTransition } from './useViewTransition'
 
 export const isDark = useDark()
-export function toggleDark(e: MouseEvent) {
+export function toggleDark(e) {
   const toggle = useToggle(isDark)
   document.documentElement.style.setProperty('--x', `${e.clientX}px`)
   document.documentElement.style.setProperty('--y', `${e.clientY}px`)

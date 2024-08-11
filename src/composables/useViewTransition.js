@@ -3,11 +3,11 @@ import { ref } from 'vue'
 /**
  * @description viewTransition
  */
-export function useViewTransition(fn: (...args: any[]) => void) {
+export function useViewTransition(fn) {
   const isViewTransition = ref(false)
 
-  let viewTransitionFinish: undefined | (() => void)
-  let viewTransitionAbort: undefined | (() => void)
+  let viewTransitionFinish
+  let viewTransitionAbort
 
   const supportViewTransition
     = document !== undefined && 'startViewTransition' in document
@@ -23,7 +23,7 @@ export function useViewTransition(fn: (...args: any[]) => void) {
 
   isViewTransition.value = true
 
-  const promise = new Promise<void>((resolve, reject) => {
+  const promise = new Promise((resolve, reject) => {
     viewTransitionFinish = resolve
     viewTransitionAbort = reject
   })
