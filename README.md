@@ -1,3 +1,8 @@
+# Vauch 
+
+## preview
+![preview-vauch](./vauch.png) 
+
 ## Why i created this project
 
 1. person's habit
