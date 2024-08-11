@@ -3,7 +3,6 @@
 import { resolve } from 'node:path'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-import VueRouter from 'unplugin-vue-router/vite'
 import { defineConfig } from 'vite'
 import VueDevTools from 'vite-plugin-vue-devtools'
 
@@ -16,15 +15,6 @@ export default defineConfig({
   },
 
   plugins: [
-    VueRouter({
-      logs: true,
-      dts: 'src/typed-router.d.ts',
-      routesFolder: [
-        {
-          src: 'src/pages',
-        },
-      ],
-    }),
     vue(),
     vueJsx(),
     VueDevTools(),

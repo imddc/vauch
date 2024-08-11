@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
 import Footer from './components/Footer.vue'
 import { useCountStore } from '~/stores/countStore'
 
@@ -15,7 +14,7 @@ const countStore = useCountStore()
       class="bg-[#dbd7fb] absolute -z-10 top-[-1rem] left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#433f68]"
     />
 
-    <main class="flex-col-center size-full relative">
+    <main class="flex-col-center size-full relative space-y-8">
       <div class="text-6xl font-bold">
         <span class="relative">
           V
@@ -23,6 +22,10 @@ const countStore = useCountStore()
         </span>
         auch
       </div>
+
+      <section class="font-bold text-2xl">
+        Happy Coding
+      </section>
 
       <section class="py-3 flex gap-4 mt-14">
         <button
@@ -41,21 +44,6 @@ const countStore = useCountStore()
           <i class="icon-[lucide--plus] size-4" />
         </button>
       </section>
-
-      <section class="flex gap-4 py-3">
-        <RouterLink to="/">
-          Home
-        </RouterLink>
-        <RouterLink to="/about">
-          About
-        </RouterLink>
-      </section>
-
-      <main class="py-6">
-        <router-view #default="{ Component }">
-          <component :is="Component" />
-        </router-view>
-      </main>
 
       <Footer />
     </main>
