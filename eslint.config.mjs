@@ -1,16 +1,10 @@
 import antfu from '@antfu/eslint-config'
-import tailwind from 'eslint-plugin-tailwindcss'
 
 export default antfu(
   {
     vue: true,
     typescript: true,
     unocss: false,
-  },
-  {
-    plugins: {
-      tailwind,
-    },
   },
   {
     ignores: [
