@@ -1,7 +1,7 @@
-# Vauch 
+# Vauch
 
 ## preview
-![preview-vauch](./vauch.png) 
+![preview-vauch](./vauch.png)
 
 ## Why i created this project
 

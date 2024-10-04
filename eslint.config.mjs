@@ -131,14 +131,13 @@ export default antfu(
         'error',
         {
           singleline: {
-            max: 1,
+            max: 3,
           },
           multiline: {
             max: 1,
           },
         },
       ],
-
       'vue/attributes-order': [
         'warn',
         {
@@ -249,21 +248,6 @@ export default antfu(
       'vue/no-ref-object-reactivity-loss': 'error',
       'vue/no-root-v-if': 'error',
       'vue/no-setup-props-reactivity-loss': 'error',
-      'vue/no-static-inline-styles': 'error',
-      'vue/no-undef-components': [
-        'error',
-        {
-          ignorePatterns: [
-            'router-view',
-            'transition',
-            'transition-group',
-            'keep-alive',
-            'teleport',
-            'suspense',
-            'component',
-          ],
-        },
-      ],
       'vue/no-undef-properties': ['error', {}],
       'vue/no-unused-refs': 'error',
       'vue/no-use-v-else-with-v-for': 'error',

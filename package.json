@@ -10,8 +10,8 @@
     "preview": "vite preview",
     "typecheck": "vue-tsc --noEmit",
     "commitlint": "commitlint --edit",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
     "test": "vitest"
   },
   "dependencies": {
@@ -52,7 +52,7 @@
   },
   "lint-staged": {
     "*.{ts,js,jsx,vue}": [
-      "eslint"
+      "eslint ./src"
     ]
   }
 }
