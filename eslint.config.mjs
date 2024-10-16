@@ -234,10 +234,6 @@ export default antfu(
         'error',
         { button: true, submit: true, reset: true },
       ],
-      'vue/html-comment-content-newline': [
-        'error',
-        { singleline: 'always', multiline: 'always' },
-      ],
       'vue/html-comment-content-spacing': ['error', 'always'],
       'vue/html-comment-indent': ['error', 2],
       'vue/match-component-file-name': [
@@ -298,5 +294,5 @@ export default antfu(
     },
   },
   [...tailwindcss.configs['flat/recommended']],
-  {...oxlint.configs['flat/recommended']},
+  { ...oxlint.configs['flat/recommended'] },
 )
