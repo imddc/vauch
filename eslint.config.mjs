@@ -1,5 +1,6 @@
 import antfu from '@antfu/eslint-config'
 import tailwindcss from 'eslint-plugin-tailwindcss'
+import oxlint from 'eslint-plugin-oxlint'
 
 export default antfu(
   {
@@ -297,4 +298,5 @@ export default antfu(
     },
   },
   [...tailwindcss.configs['flat/recommended']],
+  {...oxlint.configs['flat/recommended']},
 )
