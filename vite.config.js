@@ -7,5 +7,9 @@ export default defineConfig({
   test: {
     include: ['test/**/*.test.ts'],
     environment: 'node',
+    open: false,
+    api: {
+      port: 2426
+    }
   },
 })
