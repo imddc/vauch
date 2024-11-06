@@ -304,12 +304,28 @@ export default antfu(
       'no-html-link-for-pages': 'off',
       'no-constant-condition': ['error', { checkLoops: false }],
       'no-console': 'off',
-      'sort-imports': ['error', {
-        ignoreCase: false,
-        ignoreDeclarationSort: true,
-        ignoreMemberSort: false,
-        memberSyntaxSortOrder: ['none', 'all', 'single', 'multiple'],
-      }],
+      'import/order': [
+        'warn',
+        {
+          groups: [
+            'type',
+            'builtin',
+            'object',
+            'external',
+            'internal',
+            'parent',
+            'sibling',
+            'index',
+          ],
+          pathGroups: [
+            {
+              pattern: '~/**',
+              group: 'external',
+              position: 'after',
+            },
+          ],
+        },
+      ],
     },
   },
   [oxlint.configs['flat/recommended']],
