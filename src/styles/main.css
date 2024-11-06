@@ -1,39 +1,5 @@
-@import url("./tailwinds.css");
-@import url("./animation.css");
+@import './flex.css';
 
-html,
-body,
-#app {
-  margin: 0px;
-  padding: 0px;
-  height: 100vh;
-}
-
-html {
-  background-color: #fff;
-  color-scheme: light;
-}
-html.dark {
-  background-color: #121212;
-  color-scheme: dark;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    background-color: #fff;
-    color-scheme: light;
-  }
-  html.dark {
-    background-color: #121212;
-    color-scheme: dark;
-  }
-}
-
-::view-transition-old(*) {
-  animation: circle-back 0.5s ease-in-out;
-  mix-blend-mode: normal;
-}
-::view-transition-new(*) {
-  animation: circle 0.5s ease-in-out;
-  mix-blend-mode: normal;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

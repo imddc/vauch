@@ -1,39 +1,33 @@
 {
   "compilerOptions": {
-    "composite": true,
-    "target": "ESNext",
-    "jsx": "preserve",
+    "target": "ES2022",
+    "jsx": "react-jsx",
     "lib": [
       "ES2020",
       "DOM",
       "DOM.Iterable"
     ],
     "useDefineForClassFields": true,
-    "baseUrl": ".",
     "module": "ESNext",
     /* Bundler mode */
-    "moduleResolution": "Bundler",
-    "paths": {
-      "~/*": [
-        "src/*"
-      ]
-    },
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
-    "types": [
-      "unplugin-vue-router/client",
-      "./src/typed-router.d.ts"
-    ],
     "allowImportingTsExtensions": true,
     /* Linting */
     "strict": true,
+    "strictNullChecks": true,
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noEmit": true,
-    "allowSyntheticDefaultImports": true,
     "isolatedModules": true,
     "skipLibCheck": true
   },
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
   "include": [
     "src"
   ]

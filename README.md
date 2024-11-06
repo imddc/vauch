@@ -1,46 +1,30 @@
-# Vauch 
+# React + TypeScript + Vite
 
-## preview
-![preview-vauch](./vauch.png) 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Why i created this project
+Currently, two official plugins are available:
 
-1. person's habit
-2. create Vue projects faster and more conveniently
-3. git commit specification
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Features
+## Expanding the ESLint configuration
 
-- file base routing
-- components auto importing
-- apis auto importing
-- dev tools
-- typescript
-- deploy on vercel, zero-config
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-## Pre-packed
+- Configure the top-level `parserOptions` property like this:
 
-- unocss
-- vue-router
-- pinia
-- vueuse
-- vitest
-
-## Usage
-
-### development
-
-run and visit localhost:9527
-
-```bash
- pnpm install
- pnpm dev
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname
+  }
+}
 ```
 
-### build
-
-```bash
- pnpm build
-```
-
-And you will see the generated file in `dist` that ready to be served.
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
