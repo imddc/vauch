@@ -20,7 +20,8 @@
     },
     "resolveJsonModule": true,
     "types": [
-      "unplugin-vue-router/client"
+      "unplugin-vue-router/client",
+      "./src/typed-router.d.ts"
     ],
     "allowImportingTsExtensions": true,
     /* Linting */
@@ -34,10 +35,6 @@
     "skipLibCheck": true
   },
   "include": [
-    "vite.config.ts",
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "src/typed-router.d.ts"
+    "src"
   ]
 }

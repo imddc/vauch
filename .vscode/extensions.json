@@ -1,8 +1,11 @@
 {
   "recommendations": [
     "antfu.iconify",
-    "antfu.unocss",
     "antfu.goto-alias",
-    "streetsidesoftware.code-spell-checker"
+    "streetsidesoftware.code-spell-checker",
+    "Vue.volar",
+    "oxc.oxc-vscode",
+    "dbaeumer.vscode-eslint",
+    "vitest.explorer"
   ]
 }

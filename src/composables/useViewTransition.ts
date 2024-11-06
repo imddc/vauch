@@ -35,6 +35,7 @@ export function useViewTransition(fn: (...args: any[]) => void) {
       viewTransitionFinish?.()
     }
     catch (e) {
+      console.log(e)
       viewTransitionAbort?.()
     }
     return promise
