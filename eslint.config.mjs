@@ -8,6 +8,12 @@ export default antfu(
     react: true,
     typescript: true,
     jsx: true,
+    stylistic: true,
+    formatters: {
+      css: true,
+      html: true,
+      markdown: true,
+    },
   },
   {
     files: ['**/*.tsx?', '**/*.jsx?'],
@@ -147,6 +153,7 @@ export default antfu(
       'no-html-link-for-pages': 'off',
       'no-constant-condition': ['error', { checkLoops: false }],
       'no-console': 'off',
+      'style/brace-style': ['warn', '1tbs'],
       'import/order': [
         'warn',
         {
