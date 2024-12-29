@@ -5,7 +5,12 @@ export default antfu(
   {
     vue: true,
     typescript: true,
-    unocss: false,
+    stylistic: true,
+    formatters: {
+      css: true,
+      html: true,
+      markdown: true,
+    },
   },
   {
     ignores: [
@@ -132,7 +137,7 @@ export default antfu(
         'error',
         {
           singleline: {
-            max: 1,
+            max: 3,
           },
           multiline: {
             max: 1,
@@ -298,12 +303,16 @@ export default antfu(
       'no-trailing-spaces': 'warn',
       'arrow-body-style': 'off',
       'prefer-arrow-callback': 'off',
+      'regexp/no-unused-capturing-group': 'off',
+      'regexp/no-super-linear-backtracking': 'off',
+      'regexp/no-useless-quantifier': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-unused-vars': 'off',
       '@typescript-eslint/ban-types': 'off',
       'no-html-link-for-pages': 'off',
       'no-constant-condition': ['error', { checkLoops: false }],
       'no-console': 'off',
+      'style/brace-style': ['warn', '1tbs'],
       'import/order': [
         'warn',
         {
