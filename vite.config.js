@@ -9,7 +9,7 @@ export default defineConfig({
     environment: 'node',
     open: false,
     api: {
-      port: 2426
-    }
+      port: 5173,
+    },
   },
 })

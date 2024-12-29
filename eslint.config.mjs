@@ -6,14 +6,6 @@ export default antfu(
     typescript: true,
   },
   {
-    ignores: [
-      'node_modules/',
-      '**/node_modules/**/',
-      'pnpm-lock.yaml',
-      '**/pnpm-lock.yaml/**',
-    ],
-  },
-  {
     rules: {
       'default-case': 'error',
       'no-unsafe-finally': 'error',
@@ -25,12 +17,30 @@ export default antfu(
       '@typescript-eslint/ban-types': 'off',
       'no-constant-condition': ['error', { checkLoops: false }],
       'no-console': 'off',
-      'sort-imports': ['error', {
-        ignoreCase: false,
-        ignoreDeclarationSort: true,
-        ignoreMemberSort: false,
-        memberSyntaxSortOrder: ['none', 'all', 'single', 'multiple'],
-      }],
+      'style/brace-style': ['warn', '1tbs'],
+      // 引用时必须按照顺序
+      'import/order': [
+        'warn',
+        {
+          groups: [
+            'type',
+            'builtin',
+            'object',
+            'external',
+            'internal',
+            'parent',
+            'sibling',
+            'index',
+          ],
+          pathGroups: [
+            {
+              pattern: '~/**',
+              group: 'external',
+              position: 'after',
+            },
+          ],
+        },
+      ],
     },
   },
   [

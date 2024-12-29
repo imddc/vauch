@@ -1,11 +1,12 @@
-# Vauch 
+# Vauch
 
 ## preview
-![preview-vauch](./vauch.png) 
+
+![preview-vauch](./vauch.png)
 
 ## Why i created this project
 
-1. person's habit
+1. personal habit
 2. create Vue projects faster and more conveniently
 3. git commit specification
 
