@@ -5,19 +5,17 @@ export default {
       2,
       'always',
       [
-        'WIP', // 开发中
-        'feat', // 新特性
-        'improvement', // 加强现有特性
-        'fix', // 修补bug
-        'refactor', // 重构
-        'docs', // 文档
-        'test', // 单元测试
-        'config', // 配置文件
-        'style', // 格式需改
-        'perf', // 性能提升
-        'ci', // ci
-        'revert', // 版本回退
-        'chore', // 其他修改
+        'feat', // ✨ Features
+        'fix', // 🐛 Bug Fixes
+        'docs', // 📝 Documentation
+        'style', // 💄 Styles
+        'refactor', // ♻️ Refactors
+        'perf', // ⚡️ Performance
+        'test', // ✅ Tests
+        'build', // 📦 Build System
+        'ci', // 👷 Continuous Integration
+        'chore', // 🔧 Chores
+        'revert', // ⏪ Reverts
       ],
     ],
     'type-empty': [2, 'never'], // type不能为空
