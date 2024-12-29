@@ -1,5 +1,5 @@
-import { createHead } from '@vueuse/head'
 import type { App } from 'vue'
+import { createHead } from '@vueuse/head'
 
 const head = createHead()
 

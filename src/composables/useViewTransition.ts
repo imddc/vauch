@@ -33,8 +33,7 @@ export function useViewTransition(fn: (...args: any[]) => void) {
     try {
       fn()
       viewTransitionFinish?.()
-    }
-    catch (e) {
+    } catch (e) {
       console.log(e)
       viewTransitionAbort?.()
     }

@@ -12,14 +12,14 @@ export default antfu(
       markdown: true,
     },
   },
-  {
-    ignores: [
-      'node_modules/',
-      '**/node_modules/**/',
-      'pnpm-lock.yaml',
-      '**/pnpm-lock.yaml/**',
-    ],
-  },
+  // {
+  //   ignores: [
+  //     'node_modules/',
+  //     '**/node_modules/**/',
+  //     'pnpm-lock.yaml',
+  //     '**/pnpm-lock.yaml/**',
+  //   ],
+  // },
   {
     files: ['**/*.vue'],
     rules: {

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
-import Footer from './components/Footer.vue'
 import { useCountStore } from '~/stores/countStore'
+import Footer from './components/Footer.vue'
 
 const countStore = useCountStore()
 </script>
