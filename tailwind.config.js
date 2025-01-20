@@ -8,7 +8,22 @@ export default {
     './src/**/*.{vue,js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
+        secondaryContent: 'var(--secondary-content)',
+        accent: 'var(--accent)',
+        neutral: 'var(--neutral)',
+        neutralContent: 'var(--neutral-content)',
+        info: 'var(--info)',
+        success: 'var(--success)',
+        warning: 'var(--warning)',
+        error: 'var(--error)',
+      },
+    },
   },
   plugins: [
     addDynamicIconSelectors({

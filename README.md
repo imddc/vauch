@@ -1,47 +1,63 @@
 # Vauch
 
-## preview
+A modern Vue 3 starter template with batteries included
+
+## Preview
 
 ![preview-vauch](./vauch.png)
 
-## Why i created this project
+## Motivation
 
-1. person's habit
-2. create Vue projects faster and more conveniently
-3. git commit specification
+This project was created to:
 
-## Features
+1. Streamline Vue development workflow
+2. Provide a robust, production-ready project structure
+3. Enforce Git commit conventions
 
-- file base routing
-- components auto importing
-- apis auto importing
-- dev tools
-- typescript
-- deploy on vercel, zero-config
+## Features ✨
 
-## Pre-packed
+- 📁 File-based routing
+- 🔄 Auto-import components
+- 📡 Auto-import APIs
+- 🛠️ Development tools included
+- 📝 Full TypeScript support
+- 🚀 Zero-config Vercel deployment
 
-- unocss
-- vue-router
-- pinia
-- vueuse
-- vitest
+## Tech Stack 🛠
 
-## Usage
+### Core
 
-### development
+- [Vue 3](https://v3.vuejs.org/) - The Progressive JavaScript Framework
+- [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling
 
-run and visit localhost:9527
+### Pre-packed
+
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework
+- [Vue Router](https://router.vuejs.org/) - Official Router for Vue.js
+- [Pinia](https://pinia.vuejs.org/) - Intuitive Vue.js State Management
+- [VueUse](https://vueuse.org/) - Collection of Vue Composition Utilities
+- [Vitest](https://vitest.dev/) - Vite-native Testing Framework
+
+## Getting Started 🚀
+
+### Installation
 
 ```bash
- pnpm install
- pnpm dev
+pnpm install
 ```
 
-### build
+### Development
+
+Run the following command and visit http://localhost:9527
 
 ```bash
- pnpm build
+pnpm dev
 ```
 
-And you will see the generated file in `dist` that ready to be served.
+### Build
+
+```bash
+pnpm build
+```
+
+The built files will be generated in the `dist` directory, ready for deployment.
