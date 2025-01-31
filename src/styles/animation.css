@@ -7,3 +7,13 @@
     clip-path: circle(100% at var(--x) var(--y));
   }
 }
+
+/* @keyframes circle-back { */
+/*   0% { */
+/*     clip-path: circle(100% at var(--x) var(--y)); */
+/*   } */
+/**/
+/*   100% { */
+/*     clip-path: circle(0% at var(--x) var(--y)); */
+/*   } */
+/* } */

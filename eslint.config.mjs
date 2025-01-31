@@ -1,6 +1,6 @@
 import antfu from '@antfu/eslint-config'
 import oxlint from 'eslint-plugin-oxlint'
-import tailwindcss from 'eslint-plugin-tailwindcss'
+// import tailwindcss from 'eslint-plugin-tailwindcss'
 
 export default antfu(
   {
@@ -229,7 +229,7 @@ export default antfu(
         { allow: ['scoped', 'module', 'plain'] },
       ],
       'vue/html-button-has-type': [
-        'error',
+        'warn',
         { button: true, submit: true, reset: true },
       ],
       'vue/html-comment-content-newline': [
@@ -254,6 +254,7 @@ export default antfu(
         {
           ignorePatterns: [
             'router-view',
+            'router-link',
             'transition',
             'transition-group',
             'keep-alive',
@@ -330,6 +331,6 @@ export default antfu(
       ],
     },
   },
-  ...tailwindcss.configs['flat/recommended'],
+  // ...tailwindcss.configs['flat/recommended'],
   [oxlint.configs['flat/recommended']],
 )

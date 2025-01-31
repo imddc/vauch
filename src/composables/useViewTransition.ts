@@ -28,7 +28,6 @@ export function useViewTransition(fn: (...args: any[]) => void) {
     viewTransitionAbort = reject
   })
 
-  // @ts-expect-error cause this api is not accepted by default
   const transition = document.startViewTransition(() => {
     try {
       fn()

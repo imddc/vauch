@@ -1,12 +1,14 @@
 @import url('./tailwinds.css');
 @import url('./animation.css');
 @import url('./theme.css');
+@import 'tailwindcss';
 
 ::view-transition-old(*) {
-  animation: circle-back 0.5s ease-in-out;
+  animation: circle 0.5s ease-in-out;
   mix-blend-mode: normal;
 }
-::view-transition-new(*) {
+
+::view-transition-old(*) {
   animation: circle 0.5s ease-in-out;
   mix-blend-mode: normal;
 }
