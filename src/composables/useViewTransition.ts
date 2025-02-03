@@ -3,7 +3,7 @@ import { ref } from 'vue'
 /**
  * @description viewTransition
  */
-export function useViewTransition(fn: (...args: any[]) => void) {
+export function useViewTransition(fn: (...args: any[]) => void, readyCb?: (...args: any[]) => void) {
   const isViewTransition = ref(false)
 
   let viewTransitionFinish: undefined | (() => void)
@@ -37,6 +37,12 @@ export function useViewTransition(fn: (...args: any[]) => void) {
       viewTransitionAbort?.()
     }
     return promise
+  })
+
+  transition.ready.then(() => {
+    if (readyCb) {
+      readyCb()
+    }
   })
 
   transition.finished.then(() => {

@@ -1,29 +1,40 @@
-:root {
-  --background: #ffffff;
-  --foreground: #1f2937;
-  --primary: #6c4c9e;
-  --secondary: #ff5792;
-  --secondary-content: #fff0f5;
-  --accent: #40b9c4;
-  --neutral: #2b3440;
-  --neutral-content: #d7dde4;
-  --info: #8be9fd;
-  --success: #50fa7b;
-  --warning: #f1fa8c;
-  --error: #ff5555;
+@theme {
+  --color-primary: var(--primary);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-secondary: var(--secondary);
+  --color-info: var(--info);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
 }
 
-.dark {
-  --background: #282a36;
-  --foreground: #f8f8f2;
-  --primary: #ff79c6;
-  --secondary: #bd93f9;
-  --secondary-content: #f8f8f2;
-  --accent: #ffb86c;
-  --neutral: #414558;
-  --neutral-content: #d7dde4;
+:root {
+  @apply bg-background text-primary;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: ##f0f0f0;
+  --primary: #1c2530;
+  --secondary: #505962;
   --info: #8be9fd;
   --success: #50fa7b;
   --warning: #f1fa8c;
   --error: #ff5555;
+
+  color-scheme: light;
+}
+
+:root.dark {
+  --background: #23262f;
+  --foreground: #393d4d;
+  --primary: #f7f7f1;
+  --secondary: #c7c7c6;
+  --info: #8be9fd;
+  --success: #50fa7b;
+  --warning: #f1fa8c;
+  --error: #ff5555;
+
+  color-scheme: dark;
 }

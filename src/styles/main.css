@@ -1,14 +1,16 @@
-@import url('./tailwinds.css');
-@import url('./animation.css');
-@import url('./theme.css');
 @import 'tailwindcss';
+@import './tailwinds.css';
+@import './theme.css';
 
-::view-transition-old(*) {
-  animation: circle 0.5s ease-in-out;
-  mix-blend-mode: normal;
+/* dark-mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+::view-transition-new(root),
+::view-transition-old(root) {
+  /* 关闭默认动画，否则影响自定义动画的执行 */
+  animation: none;
 }
 
-::view-transition-old(*) {
-  animation: circle 0.5s ease-in-out;
-  mix-blend-mode: normal;
+.dark::view-transition-old(root) {
+  z-index: 1000;
 }
