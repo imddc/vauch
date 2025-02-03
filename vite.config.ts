@@ -1,11 +1,11 @@
 /// <reference types="vitest" />
 import { resolve } from 'node:path'
+import tailwindcss from '@tailwindcss/vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import VueRouter from 'unplugin-vue-router/vite'
 import { defineConfig } from 'vite'
 import VueDevTools from 'vite-plugin-vue-devtools'
-import tailwindcss from '@tailwindcss/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -18,11 +18,9 @@ export default defineConfig({
   plugins: [
     VueRouter({
       logs: true,
-      dts: 'src/typed-router.d.ts',
+      dts: 'src/types/typed-router.d.ts',
       routesFolder: [
-        {
-          src: 'src/pages',
-        },
+        { src: 'src/pages' },
       ],
     }),
     vue(),

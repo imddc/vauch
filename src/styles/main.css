@@ -5,6 +5,10 @@
 /* dark-mode */
 @custom-variant dark (&:where(.dark, .dark *));
 
+:root {
+  @apply bg-background text-primary;
+}
+
 ::view-transition-new(root),
 ::view-transition-old(root) {
   /* 关闭默认动画，否则影响自定义动画的执行 */

@@ -1,5 +1,6 @@
 import antfu from '@antfu/eslint-config'
 import oxlint from 'eslint-plugin-oxlint'
+// 由于 eslint-plugin-tailwindcss还不支持 twv4 暂时剔除 不考虑使用prettier-plugin替代
 // import tailwindcss from 'eslint-plugin-tailwindcss'
 
 export default antfu(

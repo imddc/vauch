@@ -10,10 +10,6 @@
 }
 
 :root {
-  @apply bg-background text-primary;
-}
-
-:root {
   --background: #ffffff;
   --foreground: ##f0f0f0;
   --primary: #1c2530;
