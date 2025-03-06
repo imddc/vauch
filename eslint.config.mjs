@@ -246,10 +246,10 @@ export default antfu(
       'vue/match-component-import-name': 'error',
       'vue/no-duplicate-attr-inheritance': 'error',
       'vue/no-multiple-objects-in-class': 'error',
-      'vue/no-ref-object-reactivity-loss': 'error',
+      'vue/no-ref-object-reactivity-loss': 'off',
       'vue/no-root-v-if': 'error',
-      'vue/no-setup-props-reactivity-loss': 'error',
-      'vue/no-static-inline-styles': 'error',
+      'vue/no-setup-props-reactivity-loss': 'off',
+      'vue/no-static-inline-styles': 'off',
       'vue/no-undef-components': [
         'error',
         {
@@ -308,11 +308,12 @@ export default antfu(
       'no-constant-condition': ['error', { checkLoops: false }],
       'no-console': 'off',
       'style/brace-style': ['warn', '1tbs'],
+      'perfectionist/sort-imports': 'off',
+      'sort-imports': 'off',
       'import/order': [
         'warn',
         {
           groups: [
-            'type',
             'builtin',
             'object',
             'external',
